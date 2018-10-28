@@ -1,4 +1,5 @@
 /* eslint-disable no-undef, no-unused-vars */
+import './styles/css/index.css';
 import * as serviceWorker from './util/serviceWorker';
 import App from './components/App/App';
 import React from 'react';

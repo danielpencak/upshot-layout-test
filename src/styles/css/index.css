@@ -15,4 +15,38 @@ html, body, #root, .App {
   min-height: 100vh;
 }
 
+.Header {
+  height: 80vh;
+  width: 100vw;
+  background-image: url("/assets/header.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.Header .nav {
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2vw 0 2vw;
+}
+.Header h1 {
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+  font-weight: bold;
+}
+
+.HeaderNav {
+  z-index: 2000;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40%;
+  width: 50vh;
+}
+.HeaderNav p {
+  font-weight: bold;
+  color: white;
+}
+
 /*# sourceMappingURL=index.css.map */

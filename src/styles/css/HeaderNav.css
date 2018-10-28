@@ -1,3 +1,13 @@
-
+.HeaderNav {
+  z-index: 2000;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40%;
+  width: 50vh;
+}
+.HeaderNav p {
+  font-weight: bold;
+  color: white;
+}
 
 /*# sourceMappingURL=HeaderNav.css.map */

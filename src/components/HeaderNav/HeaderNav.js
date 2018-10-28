@@ -5,7 +5,10 @@ class HeaderNav extends Component {
   render() {
     return (
       <div className="HeaderNav">
-        Hello
+        <p>Home</p>
+        <p>About</p>
+        <p>Products</p>
+        <p>Help</p>
       </div>
     );
   }

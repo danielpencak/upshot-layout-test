@@ -1,0 +1,16 @@
+.HeaderNav {
+  z-index: 2000;
+  // height: 30%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40%;
+  // position: absolute;
+  // top: 10%;
+  // right: 10%;
+  width: 50vh;
+
+  p {
+    font-weight: bold;
+    color: white;
+  }
+}

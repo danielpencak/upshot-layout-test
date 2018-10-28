@@ -1,0 +1,32 @@
+[
+  {
+    "image": "/assets/product1.png",
+    "title": "Title with Two Very Very Long Long Lines",
+    "description": "And a very long desciption to boot.  Why bother descibing something with so many words?"
+  },
+  {
+    "image": "/assets/product2.png",
+    "title": "One Short Title",
+    "description": "And a very long desciption to boot.  Why bother descibing something with so many words?"
+  },
+  {
+    "image": "/assets/product1.png",
+    "title": "One Short Title",
+    "description": "With a short description."
+  },
+  {
+    "image": "/assets/product3.png",
+    "title": "Title with Two Very Very Long Long Lines",
+    "description": "With a short description."
+  },
+  {
+    "image": "/assets/product1.png",
+    "title": "Title with Two Very Very Long Long Lines",
+    "description": "And a very long desciption to boot.  Why bother descibing something with so many words?"
+  },
+  {
+    "image": "/assets/product2.png",
+    "title": "Title with Two Very Very Long Long Lines",
+    "description": "And a very long desciption to boot.  Why bother descibing something with so many words?"
+  }
+]

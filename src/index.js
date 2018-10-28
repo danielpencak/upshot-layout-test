@@ -1,6 +1,6 @@
 /* eslint-disable no-undef, no-unused-vars */
 import * as serviceWorker from './util/serviceWorker';
-import App from './App/App';
+import App from './components/App/App';
 import React from 'react';
 import ReactDOM from 'react-dom';
 

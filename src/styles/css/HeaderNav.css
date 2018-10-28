@@ -2,12 +2,31 @@
   z-index: 2000;
   display: flex;
   justify-content: space-between;
-  margin-left: 40%;
-  width: 50vh;
+  margin-left: 50%;
+  width: 60vw;
+  align-items: center;
 }
 .HeaderNav p {
   font-weight: bold;
   color: white;
+  line-height: 1;
+  margin: 0;
+}
+.HeaderNav p:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .HeaderNav {
+    margin-left: 30%;
+    width: 65vw;
+  }
+}
+@media (max-width: 550px) {
+  .HeaderNav {
+    margin-left: 0;
+    width: 65vw;
+  }
 }
 
 /*# sourceMappingURL=HeaderNav.css.map */

@@ -8,7 +8,7 @@ class Header extends Component {
       <div className="Header">
         <div className="nav">
           <div className="logoCont">
-            <img alt="Logo" src="/assets/logo.png" />
+            <img alt="Logo" className="logo" src="/assets/logo.png" />
           </div>
           <HeaderNav />
         </div>

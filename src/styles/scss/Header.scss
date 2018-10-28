@@ -1,17 +1,16 @@
 .Header {
   height: 80vh;
-  width: 100vw;
   background-image: url('/assets/header.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 
   .nav {
-    height: 40%;
+    height: 30%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    padding: 0 2vw 0 2vw;
+    padding: 0 8vw 0 8vw;
   }
 
   h1 {
@@ -19,5 +18,21 @@
     margin-top: 50px;
     color: white;
     font-weight: bold;
+  }
+
+  .logoCont {
+    width: 30vw;
+  }
+
+  .logo {
+    width: 70%;
+  }
+}
+
+@media (max-width: 500px) {
+  .Header {
+    .nav {
+      padding: 0 2vw 0 2vw;
+    }
   }
 }

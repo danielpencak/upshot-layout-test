@@ -1,0 +1,16 @@
+.Products {
+  background-color: #DFDDE2;
+
+  .container {
+    height: 100%;
+  }
+
+  .show-grid, .row {
+    height: 100%;
+  }
+
+  .col-md-4, .col-xs-12 {
+    padding: 0;
+    height: 100%;
+  }
+}

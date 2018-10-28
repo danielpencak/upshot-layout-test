@@ -77,5 +77,93 @@ html, body, #root, .App {
     width: 65vw;
   }
 }
+.ProductCard {
+  padding: 10px;
+  height: 330px;
+  background: white;
+  margin: 0 30px 30px 0;
+  position: relative;
+}
+.ProductCard .productImageCont {
+  width: 100%;
+  height: auto;
+}
+.ProductCard .productImage {
+  width: 100%;
+}
+.ProductCard .productTitle {
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+}
+.ProductCard .productDesc {
+  text-align: center;
+  font-size: 12.6px;
+}
+.ProductCard .buyBtn {
+  position: absolute;
+  bottom: 10px;
+  width: 90%;
+  height: 30px;
+  background-color: #EC1144;
+  border: 1px solid #E11719;
+  border-radius: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ProductCard .btnText {
+  text-align: center;
+  margin: 0;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+}
+
+.ProductContainer {
+  margin-top: 30px;
+}
+
+.ProductNav {
+  height: 100%;
+  margin: 30px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.ProductNav p {
+  color: black;
+  font-weight: bold;
+}
+.ProductNav p:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .ProductNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  p {
+    margin: 7px;
+  }
+}
+.Products {
+  background-color: #DFDDE2;
+}
+.Products .container {
+  height: 100%;
+}
+.Products .show-grid, .Products .row {
+  height: 100%;
+}
+.Products .col-md-4, .Products .col-xs-12 {
+  padding: 0;
+  height: 100%;
+}
 
 /*# sourceMappingURL=index.css.map */

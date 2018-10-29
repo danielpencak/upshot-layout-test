@@ -8,6 +8,7 @@
   p {
     color: black;
     font-weight: bold;
+    margin: 7px;
   }
 
   p:hover {
@@ -18,12 +19,9 @@
 @media (max-width: 991px) {
   .ProductNav {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-  }
-  p {
-    margin: 7px;
   }
 }

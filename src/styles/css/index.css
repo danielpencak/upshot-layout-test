@@ -16,7 +16,7 @@ html, body, #root, .App {
 }
 
 .Header {
-  height: 80vh;
+  height: 70vh;
   background-image: url("/assets/header.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -43,6 +43,9 @@ html, body, #root, .App {
 }
 
 @media (max-width: 500px) {
+  .Header {
+    height: 60vh;
+  }
   .Header .nav {
     padding: 0 2vw 0 2vw;
   }
@@ -79,7 +82,7 @@ html, body, #root, .App {
 }
 .ProductCard {
   padding: 10px;
-  height: 330px;
+  height: 315px;
   background: white;
   margin: 0 30px 30px 0;
   position: relative;
@@ -102,6 +105,7 @@ html, body, #root, .App {
 }
 .ProductCard .buyBtn {
   position: absolute;
+  left: 5%;
   bottom: 10px;
   width: 90%;
   height: 30px;
@@ -111,6 +115,11 @@ html, body, #root, .App {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 2px 2px 2px grey;
+}
+.ProductCard .buyBtn:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 1px grey;
 }
 .ProductCard .btnText {
   text-align: center;
@@ -120,10 +129,39 @@ html, body, #root, .App {
   font-weight: bold;
 }
 
+@media (max-width: 991px) {
+  .ProductCard {
+    height: 400px;
+  }
+}
+@media (max-width: 767px) {
+  .ProductCard {
+    width: 50vw;
+    height: 350px;
+    margin: 20px auto;
+  }
+}
+@media (max-width: 550px) {
+  .ProductCard {
+    width: 80vw;
+    height: 400px;
+    margin: 20px auto;
+  }
+}
+@media (max-width: 350px) {
+  .ProductCard {
+    height: 350px;
+  }
+}
 .ProductContainer {
   margin-top: 30px;
 }
 
+@media (max-width: 500px) {
+  .ProductContainer {
+    margin-top: 0;
+  }
+}
 .ProductNav {
   height: 100%;
   margin: 30px 0 20px 0;
@@ -134,6 +172,7 @@ html, body, #root, .App {
 .ProductNav p {
   color: black;
   font-weight: bold;
+  margin: 7px;
 }
 .ProductNav p:hover {
   cursor: pointer;
@@ -142,14 +181,10 @@ html, body, #root, .App {
 @media (max-width: 991px) {
   .ProductNav {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-  }
-
-  p {
-    margin: 7px;
   }
 }
 .Products {

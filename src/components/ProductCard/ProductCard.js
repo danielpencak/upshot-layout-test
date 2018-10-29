@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import { Button } from 'react-bootstrap';
 
-const isMobile = /iPhone|iPod|Android/i.test(navigator.userAgent);
+const isMobile = /iPhone|iPod|iPad|Android/i.test(navigator.userAgent);
 
 class ProductCard extends Component {
   constructor(props) {
@@ -19,7 +19,7 @@ class ProductCard extends Component {
 
   componentDidMount() {
     if (isMobile) {
-      document.addEventListener('touchStart', event => {
+      document.addEventListener('touchstart', event => {
         this.handleButtonClick(event);
       });
     }

@@ -1,12 +1,7 @@
-/* eslint-disable no-unused-vars, no-useless-constructor, max-len */
+/* eslint-disable no-unused-vars, max-len */
 import React, { Component } from 'react';
-import { Button } from 'react-bootstrap';
 
 class ProductCard extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="ProductCard" id={this.props.index}>

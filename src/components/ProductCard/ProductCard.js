@@ -1,7 +1,34 @@
-/* eslint-disable no-unused-vars, max-len */
+/* eslint-disable no-unused-vars, max-len, no-undef, arrow-parens */
 import React, { Component } from 'react';
+import { Button } from 'react-bootstrap';
+
+const isMobile = /iPhone|iPod|Android/i.test(navigator.userAgent);
 
 class ProductCard extends Component {
+  constructor(props) {
+    super(props);
+
+    this.handleButtonClick = this.handleButtonClick.bind(this);
+  }
+
+  handleButtonClick(event) {
+    const btn = document.getElementById(`buyBtn${event.target.id.slice(-1)}`);
+
+    btn.classList.add('buyBtnClick');
+  }
+
+  componentDidMount() {
+    if (isMobile) {
+      document.addEventListener('touchStart', event => {
+        this.handleButtonClick(event);
+      });
+    }
+  }
+
+  componentWillUnmount() {
+    document.removeEventHandler('touchStart');
+  }
+
   render() {
     return (
       <div className="ProductCard" id={this.props.index}>
@@ -10,8 +37,8 @@ class ProductCard extends Component {
         </div>
         <h3 className="productTitle">{this.props.product.title}</h3>
         <p className="productDesc">{this.props.product.description}</p>
-        <div className="buyBtn">
-          <h3 className="btnText">BUY NOW</h3>
+        <div className="buyBtn" id={`buyBtn${this.props.index}`}>
+          <h3 className="btnText" id={`btnText${this.props.index}`}>BUY NOW</h3>
         </div>
       </div>
     );

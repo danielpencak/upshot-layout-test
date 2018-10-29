@@ -122,6 +122,9 @@ html, body, #root, .App {
 .ProductCard .buyBtn:active {
   box-shadow: 1px 1px 1px grey;
 }
+.ProductCard .buyBtnClick {
+  box-shadow: 1px 1px 1px grey;
+}
 .ProductCard .btnText {
   text-align: center;
   margin: 0;
